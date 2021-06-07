@@ -6,6 +6,9 @@ body{
     background-attachment: fixed;
     background-size: cover;    
     font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .container{
@@ -92,4 +95,5 @@ button:hover{
 input:focus{
     border: 1px solid #005a8d;
     border-bottom-color:#005a8d ;
+    border-bottom-width:2px ;
 }
