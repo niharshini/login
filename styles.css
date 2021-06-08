@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-body{
-    /* background-image: url("bgimg1.jpg");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+.login-body , .signup-body{
+    background-image: url("bgimg1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;     */
-    font-family: 'Poppins',sans-serif;
-    display: flex;
+    background-size: cover;    
+    font-family: 'Noto Sans JP', sans-serif;
+    /* display: flex; 
     justify-content: center;
-    align-items: center;
+    align-items: center;  */
 }
-.container{
+#login , #signup{
     align-items: center;
     background: rgba(255, 255, 255, .7);
 	-webkit-backdrop-filter: blur(5x);
@@ -95,5 +94,14 @@ button:hover{
 input:focus{
     border: 1px solid #005a8d;
     border-bottom-color:#005a8d ;
-    border-bottom-width:2px ;
+    border-width:2px ;
 }
+.content1{
+    margin-top: 2%;
+}
+
+
+
+  
+
+  
