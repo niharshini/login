@@ -5,9 +5,9 @@
     background-attachment: fixed;
     background-size: cover;    
     font-family: 'Noto Sans JP', sans-serif;
-    /* display: flex; 
+    display: flex; 
     justify-content: center;
-    align-items: center;  */
+    align-items: center; 
 }
 #login , #signup{
     align-items: center;
@@ -85,7 +85,7 @@ a{
 ::placeholder{
     color: #687980;
 }
-a:hover{
+#signup-link:hover , #login-link:hover{
     text-decoration: underline;
 }
 button:hover{
@@ -98,6 +98,9 @@ input:focus{
 }
 .content1{
     margin-top: 2%;
+}
+#nav-link{
+    font-size: 30px;
 }
 
 
