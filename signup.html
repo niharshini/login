@@ -29,31 +29,34 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h4 class=" pt-4 pb-0" >Mobile Number</h4>
-                    <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your mobile number" required>
+                    <input class=" px-3 py-2 rounded" type="tel" placeholder="Enter your mobile number" required>
                 </div>
                 <div class="col-lg-6 col-12">
                     <h4 class=" pt-4 pb-0" >Age</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Age" required>
+                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Age" min="18" required>
                 </div>
             </div>
             <h4 class="pt-4 pb-0" >Register as</h4>
             <div class="row">
                 <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2" onclick="doctor()" id="dot-1" type="radio" value="Doctor" name="proffession">
+                    <input class="mt-1 mb-1 px-3 py-2" onclick="doctor()" id="dot-1" type="radio"
+                     value="Doctor" name="proffession">
                     <label for="dot-1">
                         <span class="dot one"></span>
                         <span class="proffession">Doctor</span>
                     </label>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2" onclick="student()" id="dot-2" type="radio" value="Student" name="proffession">
+                    <input class="mt-1 mb-1 px-3 py-2" onclick="student()" id="dot-2" type="radio"
+                     value="Student" name="proffession">
                     <label for="dot-2">
                         <span class="dot two"></span>
                         <span class="proffession">Student</span>
                     </label>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2" onclick="others()" id="dot-3" type="radio" value="Others" name="proffession">
+                    <input class="mt-1 mb-1 px-3 py-2" onclick="others()" id="dot-3" type="radio"
+                     value="Others" name="proffession">
                     <label for="dot-3">
                         <span class="dot three"></span>
                         <span class="proffession">Others</span>
@@ -63,11 +66,11 @@
             <div class="row" id="doctor" style="display: none;">
                 <div class="col-lg-4 col-12" id="regn_no">
                     <h4 class=" pt-4 pb-0" >Registration number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your regn.no" required>
+                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your regn.no" min="0" required>
                 </div>
                 <div class="col-lg-4 col-12" id="aadhar_no">
                     <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." required>
+                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
                 </div>
                 <div class="col-lg-4 col-12" id="hospital_name">
                     <h4 class=" pt-4 pb-0" >Hospital Name</h4>
@@ -77,7 +80,7 @@
             <div class="row" id="student" style="display: none;">
                 <div class="col-lg-4 col-12" id="aadhar_no">
                     <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." required>
+                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
                 </div>
                 <div class="col-lg-4 col-12" id="college_name">
                     <h4 class=" pt-4 pb-0" >College name</h4>
@@ -85,13 +88,13 @@
                 </div>
                 <div class="col-lg-4 col-12" id="college_id">
                     <h4 class=" pt-4 pb-0" >College Id number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your college Id.no" required>
+                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your college Id.no" min="0" required>
                 </div>
             </div>
             <div class="row" id="others" style="display: none;">
                 <div class="col-lg-4 col-12" id="aadhar_no">
                     <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." required>
+                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
                 </div>
                 <div class="col-lg-4 col-12" id="occupation">
                     <h4 class=" pt-4 pb-0" >Occupation</h4>
@@ -155,7 +158,7 @@
                 </div>
             </div>
             <center>
-                <div class=" col-lg-3 col-6">
+                <div class=" col-lg-3 col-12">
                     <button class="mb-3 mt-3 px-3 py-2"  >Register</button>
                 </div>
             </center>

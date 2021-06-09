@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 .login-body , .signup-body{
-    background-image: url("bgimg1.jpg");
+    /* background-image: url("bgimg1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;    
+    background-size: cover;     */
     font-family: 'Noto Sans JP', sans-serif;
     display: flex; 
     justify-content: center;
@@ -18,6 +18,9 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h1{
+    color: #005792;
+}
+h2{
     color: #005792;
 }
 h4{
@@ -96,13 +99,9 @@ input:focus{
     border-bottom-color:#005a8d ;
     border-width:2px ;
 }
-.content1{
-    margin-top: 2%;
+.row{
+    padding: 10% 0;
 }
-#nav-link{
-    font-size: 30px;
-}
-
 
 
   
