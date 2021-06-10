@@ -10,161 +10,152 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="signup-body">
-    <div class="container col-12 col-lg-7 mt-5 rounded" id="signup">
-        <h1 class="text-center pt-4 ">Join Us!</h1>
-        <form>
-            <h4 class="pt-4 pb-0" >Full Name</h4>
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <input class="mt-1 mb-1 pt-2 pb-2 pl-2 pr-2 rounded" type="text" placeholder="First Name" required>
+<body class="signup-body" >
+        <div class="container-fluid col-12 col-lg-7 mt-5 rounded" id="signup">
+            <h1 class="text-center pt-4 ">Join Us!</h1>
+            <form>
+                <h4 class="pt-4 pb-0" >Full Name</h4>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <input class="mt-1 mb-1 pt-2 pb-2 pl-2 pr-2 rounded" type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input class="mt-1 mb-1 pt-2 pb-2 pl-2 pr-2 rounded" type="text" placeholder="Middle Name" required>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input class="mt-1 mb-1 pt-2 pb-2 pl-2 pr-2 rounded" type="text" placeholder="Last Name" required>
+                    </div>  
                 </div>
-                <div class="col-12 col-lg-4">
-                    <input class="mt-1 mb-1 pt-2 pb-2 pl-2 pr-2 rounded" type="text" placeholder="Middle Name" required>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Mobile Number</h4>
+                        <input class=" px-3 py-2 rounded" type="tel" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Age</h4>
+                        <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Age" min="18" required>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-4">
-                    <input class="mt-1 mb-1 pt-2 pb-2 pl-2 pr-2 rounded" type="text" placeholder="Last Name" required>
-                </div>  
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <h4 class=" pt-4 pb-0" >Mobile Number</h4>
-                    <input class=" px-3 py-2 rounded" type="tel" placeholder="Enter your mobile number" required>
+                <h4 class="pt-4 pb-0" >Register as</h4>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <input class="mt-1 mb-1 px-3 py-2" onclick="doctor()" id="dot-1" type="radio"
+                         value="Doctor" name="proffession">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="proffession">Doctor</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <input class="mt-1 mb-1 px-3 py-2" onclick="student()" id="dot-2" type="radio"
+                         value="Student" name="proffession">
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="proffession">Student</span>
+                        </label>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <input class="mt-1 mb-1 px-3 py-2" onclick="others()" id="dot-3" type="radio"
+                         value="Others" name="proffession">
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="proffession">Others</span>
+                        </label>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                    <h4 class=" pt-4 pb-0" >Age</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Age" min="18" required>
+                <div class="row" id="doctor" style="display: none;">
+                    <div class="col-lg-12 " id="regn_no">
+                        <h4 class=" pt-4 pb-0" >Registration number</h4>
+                        <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your regn.no" min="0" required>
+                    </div>
+                    <div class="col-lg-12 " id="aadhar_no">
+                        <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
+                        <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
+                    </div>
+                    <div class="col-lg-12 " id="hospital_name">
+                        <h4 class=" pt-4 pb-0" >Hospital Name</h4>
+                        <input class=" px-3 py-2 rounded" type="text" placeholder="Enter hospital name " required>
+                    </div>
                 </div>
-            </div>
-            <h4 class="pt-4 pb-0" >Register as</h4>
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2" onclick="doctor()" id="dot-1" type="radio"
-                     value="Doctor" name="proffession">
-                    <label for="dot-1">
-                        <span class="dot one"></span>
-                        <span class="proffession">Doctor</span>
-                    </label>
+                <div class="row" id="student" style="display: none;">
+                    <div class="col-lg-12 " id="aadhar_no">
+                        <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
+                        <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
+                    </div>
+                    <div class="col-lg-12 " id="college_name">
+                        <h4 class=" pt-4 pb-0" >College name</h4>
+                        <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your college name" required>
+                    </div>
+                    <div class="col-lg-12 " id="college_id">
+                        <h4 class=" pt-4 pb-0" >College Id number</h4>
+                        <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your college Id.no" min="0" required>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2" onclick="student()" id="dot-2" type="radio"
-                     value="Student" name="proffession">
-                    <label for="dot-2">
-                        <span class="dot two"></span>
-                        <span class="proffession">Student</span>
-                    </label>
+                <div class="row" id="others" style="display: none;">
+                    <div class="col-lg-12 " id="aadhar_no">
+                        <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
+                        <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
+                    </div>
+                    <div class="col-lg-12 " id="occupation">
+                        <h4 class=" pt-4 pb-0" >Occupation</h4>
+                        <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your occupation" required>
+                    </div>
+                    <div class="col-lg-12 " id="location">
+                        <h4 class=" pt-4 pb-0" >Location</h4>
+                        <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your location" required>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2" onclick="others()" id="dot-3" type="radio"
-                     value="Others" name="proffession">
-                    <label for="dot-3">
-                        <span class="dot three"></span>
-                        <span class="proffession">Others</span>
-                    </label>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Username</h4>
+                        <input class=" px-3 py-2 rounded" type="text" placeholder="Set Username" required>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Gender</h4>
+                        <select class=" px-3 py-2 rounded" name="Gender" id="gender">
+                            <option value="Gender">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>                
+                    </div>
                 </div>
-            </div>
-            <div class="row" id="doctor" style="display: none;">
-                <div class="col-lg-4 col-12" id="regn_no">
-                    <h4 class=" pt-4 pb-0" >Registration number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your regn.no" min="0" required>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-12">
+                        <h4 class=" pt-4 pb-0" >Email</h4>
+                        <input class=" px-3 py-2 rounded" type="email" placeholder="Enter your email" required>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-12" id="aadhar_no">
-                    <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Create Password</h4>
+                        <input class=" px-3 py-2 rounded" type="password" placeholder="Set your password" required>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Confirm password</h4>
+                        <input class=" px-3 py-2 rounded" type="password" placeholder="Confirm Your Password" required>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-12" id="hospital_name">
-                    <h4 class=" pt-4 pb-0" >Hospital Name</h4>
-                    <input class=" px-3 py-2 rounded" type="text" placeholder="Enter hospital name " required>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Present Address</h4>
+                        <input class=" px-3 py-2 rounded" type="address" placeholder="Enter your present address" required>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <h4 class=" pt-4 pb-0" >Permanent Address</h4>
+                        <input class=" px-3 py-2 rounded" type="address" placeholder=" Enter your permanent address" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row" id="student" style="display: none;">
-                <div class="col-lg-4 col-12" id="aadhar_no">
-                    <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
-                </div>
-                <div class="col-lg-4 col-12" id="college_name">
-                    <h4 class=" pt-4 pb-0" >College name</h4>
-                    <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your college name" required>
-                </div>
-                <div class="col-lg-4 col-12" id="college_id">
-                    <h4 class=" pt-4 pb-0" >College Id number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your college Id.no" min="0" required>
-                </div>
-            </div>
-            <div class="row" id="others" style="display: none;">
-                <div class="col-lg-4 col-12" id="aadhar_no">
-                    <h4 class=" pt-4 pb-0" >Aadhaar number</h4>
-                    <input class=" px-3 py-2 rounded" type="number" placeholder="Enter your Aadhaar no." min="0" required>
-                </div>
-                <div class="col-lg-4 col-12" id="occupation">
-                    <h4 class=" pt-4 pb-0" >Occupation</h4>
-                    <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your occupation" required>
-                </div>
-                <div class="col-lg-4 col-12" id="location">
-                    <h4 class=" pt-4 pb-0" >Location</h4>
-                    <input class=" px-3 py-2 rounded" type="text" placeholder="Enter your location" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-12">
-                    <h4 class=" pt-4 pb-0" >Username</h4>
-                    <input class=" px-3 py-2 rounded" type="text" placeholder="Set Username" required>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-12">
-                    <h4 class=" pt-4 pb-0" >Gender</h4>
-                    <select class=" px-3 py-2 rounded" name="Gender" id="gender">
-                        <option value="Gender">Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Others">Others</option>
-                    </select>                
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-12">
-                    <h4 class=" pt-4 pb-0" >Email</h4>
-                    <input class=" px-3 py-2 rounded" type="email" placeholder="Enter your email" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-12">
-                    <h4 class=" pt-4 pb-0" >Create Password</h4>
-                    <input class=" px-3 py-2 rounded" type="password" placeholder="Set your password" required>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-12">
-                    <h4 class=" pt-4 pb-0" >Confirm password</h4>
-                    <input class=" px-3 py-2 rounded" type="password" placeholder="Confirm Your Password" required>
-                </div>
-            </div>
-            <h4 class=" pt-4 pb-0" >Residence Address</h4>
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2 rounded" type="address" placeholder="Flat / Room / Door / Block No." required>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2 rounded" type="address" placeholder="Name of Premises/Building/Village" required>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2 rounded" type="address" placeholder="Road/Street/Lane/Post Office" required>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2 rounded" type="address" placeholder="Town/City/District" required>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2 rounded" type="address" placeholder="State/Union Territory" required>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <input class="mt-1 mb-1 px-3 py-2 rounded" type="address" placeholder="Pincode" required>
-                </div>
-            </div>
-            <center>
-                <div class=" col-lg-3 col-12">
-                    <button class="mb-3 mt-3 px-3 py-2"  >Register</button>
-                </div>
-            </center>
-            <p class="mb-3" style="font-size:x-large;">Already a user? <span><a href="login.html" id="login-link">Log In</a></span></p>           
-        </form>
-    </div>
+                <center>
+                    <div class=" col-lg-3 col-4">
+                        <button class="mb-3 mt-3 px-3 py-2" id="button" >Register</button>
+                    </div>
+                </center>
+                <p class="mb-3" style="font-size:x-large;">Already a user? <span><a href="login.html" id="login-link">Log In</a></span></p> 
+                <a href="index.html"><button type="button" class="col-2 col-lg-2 mb-3 mt-3 px-3 py-2" id="button" style="float:right">Home</button></a>
+                
+            </form>
+        </div>
 </body>
 <script>
     function doctor(){

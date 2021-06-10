@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 .login-body , .signup-body{
-    background-image: url("bgimg1.jpg");
+    background-image: url("./images/bgimg2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;    
@@ -15,6 +15,10 @@
 	-webkit-backdrop-filter: blur(5x);
 	backdrop-filter: blur(5px);
     color: rgb(31, 30, 30);
+    /* background-image: url("./images/profile.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;  */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 h1{
@@ -91,8 +95,9 @@ a{
 #signup-link:hover , #login-link:hover{
     text-decoration: underline;
 }
-button:hover{
-    background-color:#2541b2;
+#button:hover{
+    background-color:#f1f1f1;
+    color: #005a8d;
 }
 input:focus{
     border: 1px solid #005a8d;
@@ -100,10 +105,14 @@ input:focus{
     border-width:2px ;
 }
 .content{
-    padding: 10% 0;
+    padding: 5% 0;
+}
+.navbar-item{
+    padding:0 3%;
+}
+.nav-link{
+    font-size: 1.8rem;
 }
 
-
-  
 
   
