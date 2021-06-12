@@ -36,7 +36,7 @@ input, select
     width: 100%;
     outline: none;
     border: 1px solid #ccc;
-    border-bottom-width:2px ;
+    border-width:2px ;
     transition: all 0.3s ease;
     background-color: white;
 }
@@ -96,14 +96,13 @@ a{
 #signup-link:hover , #login-link:hover{
     text-decoration: underline;
 }
-#button:hover{
+#button:hover
+{
     background-color:#f1f1f1;
     color: #005a8d;
 }
-input:focus{
-    border: 1px solid #005a8d;
-    border-bottom-color:#005a8d ;
-    border-width:2px ;
+ input:hover, select:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .content{
     padding: 5% 0;
